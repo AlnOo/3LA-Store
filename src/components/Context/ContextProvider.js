@@ -140,6 +140,7 @@ const reduce = (state, action) => {
         ...state
       };
     }
+    default:
   }
 };
 

@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useRef } from "react";
 import "./Header.css";
-import { AiOutlineShopping } from "react-icons/ai";
 import { BsFillBookmarkHeartFill } from "react-icons/bs";
 import { ProductContext, ProductDispath } from "../Context/ContextProvider";
 import { Link } from "react-router-dom";
@@ -28,12 +27,6 @@ function Header() {
         3LA Store
         </Link>
           <div className="icon_Sopping_box">
-          <Link to={"/basket"} className="shoppe_icon_box">
-            <AiOutlineShopping className="shop_icon" />
-            {state.basket.length > 0 && (
-              <span className="badge_shope">{state.basket.length}</span>
-            )}
-          </Link>
           <Link
             to={"/favorite"}
             className={`mark_icon_box ${state.isFavorite ? "tada" : ""}`}
